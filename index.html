@@ -1,26 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<button id="largura" style="width: 100%; height: 100px; font-size: 50pt;">largura</button>
-		<button id="altura" style="width: 100%; height: 100px; font-size: 50pt;">altura</button>
-
-		<script>
-			var largura = $("#largura");
-			var altura = $("#altura");
-
-			largura.on("click",function()
-			{
-				alert("A largura da tela é: "+$(window).width())
-			})
-
-			altura.on("click",function()
-			{
-				alert("A altura da tela é: "+$(window).height())
-			})
-		</script>
+		<h1>Calcule Sua Resolução de Tela do Seu Navegador</h1>
+		<div class="alturaelargura">
+			<h2 id=largura>Largura</h2>
+			<h2> x </h2>
+			<h2 id="altura">Altura</h2>
+		</div>
+		<button onclick="calcularResolucao()">Calcular</button>
 	</body>
 </html>
