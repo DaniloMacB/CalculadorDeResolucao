@@ -1,5 +1,42 @@
-h1 { font-size: 40pt; padding: 0; margin: 0; text-align: center; }
-h2 { display: inline-block; font-size: 30pt; padding: 0; margin: 0; }
-#largura, #altura { display: inline-block; border: 2px solid black; padding: 5px; margin: 0 0 5px 0; }
-button { font-size: 30pt; padding: 5px; margin: 0; position: relative; left: 50%; transform: translatex(-50%);}
-.alturaelargura { text-align: center; }
+body
+{
+  color: white;
+  background: linear-gradient(to bottom, rgb(50,0,250), rgb(100,0,250));
+  background-attachment: fixed;
+}
+h1
+{
+  font-size: 40pt;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  display: inline-block; font-size: 30pt; padding: 0; margin: 0;
+}
+button
+{
+  font-size: 30pt;
+  padding: 5px;
+  margin: 0;
+  position: relative;
+  left: 50%; transform: translatex(-50%);
+}
+#largura, #altura
+{
+  display: inline-block;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 0 0 5px 0;
+}
+.container
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.alturaelargura
+{
+  text-align: center;
+}
